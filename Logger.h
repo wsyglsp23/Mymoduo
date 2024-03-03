@@ -12,36 +12,36 @@
         Logger& logger = Logger::getInstance();\
         logger.setLogLevel(INFO);\
         char buf[1024] = {0};\
-        snprintf(buf,1024,logformat,##__VA_ARGS__);\
+        snprintf(buf,1024,LogmsgFormat,##__VA_ARGS__);\
         logger.log(buf);\             
     } while (0)
-#define LOG_ERR(logformat,...)\
+#define LOG_ERR(LogmsgFormat,...)\
     do                  \
     { \
         Logger& logger = Logger::getInstance();\
         logger.setLogLevel(ERR);\
         char buf[1024] = {0};\
-        snprintf(buf,1024,logformat,##__VA_ARGS__);\
+        snprintf(buf,1024,LogmsgFormat,##__VA_ARGS__);\
         logger.log(buf);\             
     } while (0)
-#define LOG_FATAL(logformat,...)\
+#define LOG_FATAL(LogmsgFormat,...)\
     do                  \
     { \
         Logger& logger = Logger::getInstance();\
         logger.setLogLevel(FATAL);\
         char buf[1024] = {0};\
-        snprintf(buf,1024,logformat,##__VA_ARGS__);\
+        snprintf(buf,1024,LogmsgFormat,##__VA_ARGS__);\
         logger.log(buf);\             
     } while (0)
 
 #ifdef MODULEDBG
-#define LOG_DBG(logformat,...)\
+#define LOG_DBG(LogmsgFormat,...)\
     do                  \
     { \
         Logger& logger = Logger::getInstance();\
         logger.setLogLevel(DBG);\
         char buf[1024] = {0};\
-        snprintf(buf,1024,logformat,##__VA_ARGS__);\
+        snprintf(buf,1024,LogmsgFormat,##__VA_ARGS__);\
         logger.log(buf);\             
     } while (0)
 #endif // !MODULEDBG
