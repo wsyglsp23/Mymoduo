@@ -1,7 +1,8 @@
 #pragma once
 #include<iostream>
-#include <nocpy.h>
 #include<sys/time.h>
+#include"nocpy.h"
+//时间类
 class Timestamp 
 {
 public:

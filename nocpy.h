@@ -1,7 +1,5 @@
 #pragma once
 
-
-namespace muduo{
 class nocpy
 {
 
@@ -14,5 +12,4 @@ protected:
     ~nocpy() = default;
 
 };
-}
 

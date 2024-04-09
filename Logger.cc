@@ -1,7 +1,5 @@
-#pragma once
 #include "Logger.h"
 #include <iostream>
-using namespace muduo;
 void Logger::setLogLevel(int LogLevel)
 {
     Loglevel_ = LogLevel;
